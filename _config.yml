@@ -1,1 +1,8 @@
 theme: jekyll-theme-minimal
+title: Outlier Weekly — Methodology
+description: Public methodology mirror for Outlier Weekly — three-formula synthesis (Poisson, Shannon entropy, Taleb fat-tail) applied to rare-event prediction markets on Polymarket and Kalshi.
+url: "https://cemini23.github.io"
+baseurl: "/outlier-weekly-methodology"
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
