@@ -22,6 +22,7 @@ Every call made in Outlier Weekly is logged on this page the day it ships, with 
 | Issue | Ship date | Market | Outcome window | Direction | Entry (YES¢) | Sized fraction | Resolution date | Status | Resolution | Issue link |
 |------:|-----------|--------|----------------|-----------|--------------|----------------|-----------------|--------|------------|------------|
 | 1 | 2026-05-14 | Will Anthropic make a deal with the Pentagon by [date]? | June 30, 2026 | **SKIP** | 32¢ (draft) → 27¢ (publish-day lock) | 0% of bankroll | 2026-06-30 | OPEN | pending | [Issue 1](https://outlierweekly.substack.com/p/issue-1-one-market-three-formulas) |
+| 2 | 2026-05-26 | Iran closes its airspace by June 30, 2026? | June 30, 2026 | **SKIP** | 27¢ (evening draft) → 29.7¢ (publish-day lock) | 0% of bankroll | 2026-06-30 | OPEN | pending | [Issue 2](https://outlierweekly.substack.com/p/issue-2-iran-airspace-three-formulas) |
 
 ---
 
@@ -52,6 +53,35 @@ Every call made in Outlier Weekly is logged on this page the day it ships, with 
 
 ---
 
+## Issue 2 — call detail
+
+**Market:** [Iran closes its airspace by June 30, 2026?](https://polymarket.com/event/iran-closes-its-airspace-by-june-30-432-786-462-866)  
+**Direction:** SKIP — Poisson fair value ≈ market price; KL in noise floor; synthesis below actionable minimum.
+
+**Model output (evening draft, p_market = 27.25¢):**
+
+- Poisson edge (λ ≈ 0.065–0.07 / week, 5 weeks): +2–3¢ → marginal BUY_YES at candidate level
+- Shannon / KL divergence (p_mine = 38%): ≈ 0.016 bits → SKIP
+- Taleb tail-bucket multiplier: 1.5×
+- Weighted synthesis: ≈ 0.6–1.1% YES (below 0.5% actionable floor → treated as SKIP)
+
+**Model output (publish-day lock, p_market = 29.7¢):**
+
+- Poisson edge (λ ≈ 0.065–0.07 / week): ≈ 0¢ → SKIP (inside 1¢ noise band)
+- Shannon / KL divergence (p_mine = 38%): ≈ 0.023 bits → SKIP
+- Taleb tail-bucket multiplier: 1.5×
+- Weighted synthesis: ≈ 0.16% YES → **0% logged** (effective SKIP)
+
+**Why the change between draft and publish:** YES repriced **+2.4pp** overnight (27¢ → 30¢), collapsing Poisson edge into the noise band. Issue 2 applies the tighter **≥3pp re-run rule** before every publish lock (Issue 1 documented a 5pp move; Issue 2 standardizes 3pp).
+
+**Category note:** Issue 2 is a **geopolitical** tail binary (airspace closure), deliberately different from Issue 1’s **regulatory** binary — methodology breadth, same skip discipline.
+
+**Resolution oracle:** Polymarket rules text — major closure of Iranian airspace (not weather-only), evaluated as of 2026-05-26.
+
+**Re-watch trigger:** If YES moves outside a **24–34¢** band before resolution, re-run and log any new call in the next issue.
+
+---
+
 ## Ledger schema (for forward-readers)
 
 Future entries will follow this column ordering. Definitions:
@@ -77,3 +107,4 @@ When SKIPs resolve, they are evaluated as either SKIP-CORRECT (the position the 
 - [Methodology — three formulas, one weighting](/outlier-weekly-methodology/)
 - [Subscribe to Outlier Weekly](https://outlierweekly.substack.com/)
 - [Issue 1 — One Market, Three Formulas](https://outlierweekly.substack.com/p/issue-1-one-market-three-formulas)
+- [Issue 2 — Iran Airspace, Three Formulas, and Why I’m Not Sizing This](https://outlierweekly.substack.com/p/issue-2-iran-airspace-three-formulas)

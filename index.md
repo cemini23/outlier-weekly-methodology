@@ -7,6 +7,14 @@ This page is the open methodology behind every issue of Outlier Weekly. The news
 
 The methodology is open by design. The integration — the 40 / 35 / 25 weighting and the override gates around it — is the contribution. Each component formula is well-established in the academic literature and is linked to its primary source. If you read the math here and decide it is not for you, that is a fair conclusion to reach before subscribing.
 
+**Forward-track (live ledger):** Every issue’s call — including SKIPs — is logged on the [forward-track page](/outlier-weekly-methodology/forward-track/) on publish day. As of Issue 2 (2026-05-26): two consecutive skip-discipline entries (Anthropic–Pentagon regulatory binary; Iran airspace geopolitical binary).
+
+**Publish discipline (updated Issue 2):**
+
+- Re-run the full synthesis if YES moves **≥3 percentage points** between draft and publish lock.
+- Log **SKIP** when weighted output is **< ~0.5% of bankroll** even if directionally non-zero (noise-floor / actionable-minimum rule).
+- Show both draft and publish-day prices on the forward-track when they differ.
+
 ---
 
 ### Why a three-formula synthesis instead of one indicator?
@@ -223,6 +231,13 @@ The synthesis is intentionally conservative. When only one signal fires, the wei
 - Thorp, E. O. (2006). The Kelly Criterion in Blackjack, Sports Betting, and the Stock Market. In *Handbook of Asset and Liability Management*.
 
 Each issue of Outlier Weekly re-cites the relevant primary source inline so the math is verifiable end-to-end without trusting this page.
+
+**Published issues (methodology applied):**
+
+| Issue | Date | Market (short) | Call | Link |
+|------:|------|----------------|------|------|
+| 1 | 2026-05-14 | Anthropic–Pentagon by June 30 | SKIP | [Substack](https://outlierweekly.substack.com/p/issue-1-one-market-three-formulas) |
+| 2 | 2026-05-26 | Iran airspace by June 30 | SKIP | [Substack](https://outlierweekly.substack.com/p/issue-2-iran-airspace-three-formulas) |
 
 ---
 
