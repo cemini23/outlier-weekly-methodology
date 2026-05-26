@@ -55,7 +55,7 @@ Every call made in Outlier Weekly is logged on this page the day it ships, with 
 
 ## Issue 2 — call detail
 
-**Market:** [Iran closes its airspace by June 30, 2026?](https://polymarket.com/event/iran-closes-its-airspace-by-june-30-432-786-462-866)  
+**Market:** [Iran closes its airspace by June 30, 2026?](https://polymarket.com/event/iran-closes-its-airspace-by) *(June 30 leg)*  
 **Direction:** SKIP — Poisson fair value ≈ market price; KL in noise floor; synthesis below actionable minimum.
 
 **Model output (evening draft, p_market = 27.25¢):**
